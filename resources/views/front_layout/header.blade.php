@@ -33,3 +33,7 @@
             </div>
         </nav>
     </header>
+
+    <div class="bg__overlay">
+        <video src="{{ asset('assets/img/comingSoon/bg-overlay.mp4') }}" type="video/mp4" placeline muted autoplay />
+    </div>

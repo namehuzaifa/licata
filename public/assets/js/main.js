@@ -83,3 +83,8 @@ $('.testimonial__sliderWrapperCenter').slick({
       // instead of a settings object
     ]
   });
+
+document.querySelector('.bg__overlay video').addEventListener('ended',myHandler,false);
+    function myHandler(e) {
+    $('.bg__overlay').fadeOut()
+}

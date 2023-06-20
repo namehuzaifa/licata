@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\NewsLetterController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/error', function () {
+    return view('errors.503');
+});
+
+
+Route::post('/newsletter', [NewsLetterController::class, 'store'])->name('newsletter');

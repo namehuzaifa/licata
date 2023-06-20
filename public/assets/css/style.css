@@ -45,7 +45,7 @@ a{
     font-size: 18px;
     color: #000;
     transition: .3s;
-    
+
 }
 .bi__btn:hover{
     background-position:0px 60px;
@@ -111,7 +111,7 @@ a{
 }
 .hero__form .form-control {
     height: 60px;
-    
+
 }
 .hero__form .form-control[type='email'] {
     width:430px !important;
@@ -478,4 +478,26 @@ h3.accordion-header {
 }
 .bi__footer .nav-item a {
     font-weight: 400 !important;
+}
+
+
+/* start video */
+
+.bg__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 9999;
+    background-color: #000;
+}
+.bg__overlay video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    margin: auto;
 }
