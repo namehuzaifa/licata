@@ -23,4 +23,4 @@ Route::get('/error', function () {
 });
 
 
-Route::post('/newsletter', [NewsLetterController::class, 'store'])->name('newsletter');
+Route::get('/newsletter', [NewsLetterController::class, 'store'])->name('newsletter');

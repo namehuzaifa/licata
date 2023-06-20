@@ -48,7 +48,7 @@ class NewsLetterController extends Controller
                         'body' => 'Your subscription to our newsletter has been confirmed.',
                         'thanks' => 'Thank you for subscribing!',
                         'actionText' => 'Visit Site',
-                        'actionURL' => "https://dramhammerauctions.com/",
+                        'actionURL' => "https://licata-insurance.com",
                     ];
 
                     $temp = explode('@',$request->email);
