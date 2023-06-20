@@ -464,9 +464,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.css">
 </head>
 <body>
-    {{-- <div class="bg__overlay">
+    <div class="bg__overlay">
         <video src="{{ asset('assets/img/comingSoon/bg-overlay.mp4') }}" type="video/mp4" muted autoplay />
-    </div> --}}
+    </div>
 
     <section class="banner">
         <!-- <img src="img/home.png" alt="" class="img-fluid side_img"> -->
