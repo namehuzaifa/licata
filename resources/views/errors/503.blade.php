@@ -21,6 +21,10 @@
             font-family: "Bebas Neue", sans-serif;
         }
 
+        input{
+            font-family: "sans-serif";
+        }
+
         /* body {
             overflow-y: hidden;
         } */
