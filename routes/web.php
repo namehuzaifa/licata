@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NewsLetterController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,13 +15,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+// Route::get('/', function () {
+//     return view('home');
+// });
 
 Route::get('/error', function () {
     return view('errors.503');
 });
 
-
 Route::get('/newsletter', [NewsLetterController::class, 'store'])->name('newsletter');
+
+Route::get('/',         [HomeController::class, 'home'])->name('home');
+Route::get('/about-us', [HomeController::class, 'aboutUs'])->name('aboutUs');
+Route::get('/contact',  [HomeController::class, 'contact'])->name('contact');
+Route::get('/services', [HomeController::class, 'services'])->name('services');
+Route::get('/service',  [HomeController::class, 'innerService'])->name('innerService');
+Route::get('/blog',     [HomeController::class, 'blog'])->name('blog');

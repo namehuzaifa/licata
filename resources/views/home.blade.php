@@ -1,4 +1,5 @@
 @extends('front_layout.app')
+@section('title', 'Home  | '.config('app.name'))
 
 @section('content')
     <main class="bi__mainContent">
@@ -78,7 +79,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-12 text-end pb-4">
-                                <a href="#" class="btn bi__btn">View All Services</a>
+                                <a href="{{ route('services') }}" class="btn bi__btn">View All Services</a>
                             </div>
                         </div>
                     </div>
@@ -99,7 +100,7 @@
                                     of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
                                     more-or-less normal distribution of letters, as opposed to using.
                                 </p>
-                                <a href="#" class="server__link">
+                                <a href="{{ route('innerService') }}" class="server__link">
                                     Read More
                                 </a>
                             </div>
@@ -120,7 +121,7 @@
                                     of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
                                     more-or-less normal distribution of letters, as opposed to using.
                                 </p>
-                                <a href="#" class="server__link">
+                                <a href="{{ route('innerService') }}" class="server__link">
                                     Read More
                                 </a>
                             </div>
@@ -141,7 +142,7 @@
                                     of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
                                     more-or-less normal distribution of letters, as opposed to using.
                                 </p>
-                                <a href="#" class="server__link">
+                                <a href="{{ route('innerService') }}" class="server__link">
                                     Read More
                                 </a>
                             </div>
