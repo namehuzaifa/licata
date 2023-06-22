@@ -7,33 +7,28 @@
                     <div class="col-6 col-md-2 mb-3">
                         <h5>COMPANY</h5>
                         <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a href="{{ route('home') }}" class="nav-link p-0">Home</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Features</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Pricing</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">FAQs</a></li>
-                            <li class="nav-item mb-2"><a href="{{ route('aboutUs') }}" class="nav-link p-0 ">About</a></li>
+                            <li class="nav-item mb-2"><a href="{{ route('aboutUs') }}" class="nav-link p-0">About Us</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Where're Hiring</a></li>
                         </ul>
                     </div>
 
                     <div class="col-6 col-md-2 mb-3">
                         <h5>FEATURES</h5>
                         <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a href="{{ route('home') }}" class="nav-link p-0 ">Home</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Features</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Pricing</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">FAQs</a></li>
-                            <li class="nav-item mb-2"><a href="{{ route('aboutUs') }}" class="nav-link p-0 ">About</a></li>
+                            <li class="nav-item mb-2"><a href="{{ route('aboutUs') }}" class="nav-link p-0 ">Wyshes</a></li>
+                            <li class="nav-item mb-2"><a href="{{ route('aboutUs') }}" class="nav-link p-0 ">Flexible coverage</a></li>
+                            <li class="nav-item mb-2"><a href="{{ route('aboutUs') }}" class="nav-link p-0 ">Wysh granters</a></li>
+                            <li class="nav-item mb-2"><a href="{{ route('aboutUs') }}" class="nav-link p-0 ">Instant coverage</a></li>
                         </ul>
                     </div>
 
                     <div class="col-6 col-md-2 mb-3">
                         <h5>RESOURCES</h5>
                         <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a href="{{ route('home') }}" class="nav-link p-0 ">Home</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Features</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Pricing</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">FAQs</a></li>
-                            <li class="nav-item mb-2"><a href="{{ route('aboutUs') }}" class="nav-link p-0 ">About</a></li>
+                            <li class="nav-item mb-2"><a href="{{ route('blog') }}" class="nav-link p-0 ">Blog</a></li>
+                            <li class="nav-item mb-2"><a href="{{ route('faq') }}" class="nav-link p-0 ">FAQ's</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Claims</a></li>
+                            <li class="nav-item mb-2"><a href="{{ route('contact') }}" class="nav-link p-0 ">Contact Us</a></li>
                         </ul>
                     </div>
 

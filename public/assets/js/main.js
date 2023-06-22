@@ -84,7 +84,3 @@ $('.testimonial__sliderWrapperCenter').slick({
     ]
   });
 
-document.querySelector('.bg__overlay video').addEventListener('ended',myHandler,false);
-    function myHandler(e) {
-    $('.bg__overlay').fadeOut()
-}

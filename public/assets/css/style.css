@@ -185,9 +185,10 @@ a{
 }
 
 .service__box .hero__headingAnimate {
-    font-size: 90px;
+    font-size: 55px;
     line-height: 280px;
     z-index: 2;
+    font-weight: 600;
 }
 
 .service__box .server__link {
@@ -478,6 +479,9 @@ h3.accordion-header {
 .bi__footer .nav-item a {
     font-weight: 400 !important;
 }
+.bi__footer li a:hover{
+    color: #D2A856 !important;
+}
 .bg__overlay {
     position: fixed;
     top: 0;
@@ -504,6 +508,7 @@ h3.accordion-header {
     height: 550px;
     justify-content: end;
     padding-bottom: 180px;
+    z-index: 3;
 }
 
 .bi__hero.page__title .hero__headingAnimate {
@@ -636,4 +641,13 @@ h3.accordion-header {
     .bi__btn.contact {
         background: linear-gradient(145deg, rgba(30,30,30,1) 0%, rgba(44,44,44,1) 10%, rgba(99,97,97,1) 23%, rgba(151,151,151,1) 50%, rgba(78,78,78,1) 69%, rgba(110,110,110,1) 78%, rgba(78,77,77,1) 89%, rgba(0,0,0,1) 100%);
         color: #fff;
+    }
+    .bi__aboutUs.about {
+        background-color: #f2f2f2;
+        padding: 160px 0 100px;
+        margin-top: -80px !important;
+        z-index: 1;
+    }
+    .bi__aboutUs.about .content__box.full{
+        width: 100%;
     }

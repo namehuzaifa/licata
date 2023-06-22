@@ -31,3 +31,4 @@ Route::get('/contact',  [HomeController::class, 'contact'])->name('contact');
 Route::get('/services', [HomeController::class, 'services'])->name('services');
 Route::get('/service',  [HomeController::class, 'innerService'])->name('innerService');
 Route::get('/blog',     [HomeController::class, 'blog'])->name('blog');
+Route::get('/faq',     [HomeController::class, 'faq'])->name('faq');

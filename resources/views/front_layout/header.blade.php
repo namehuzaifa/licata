@@ -27,13 +27,11 @@
                     </ul>
                     <div class="d-flex gap-5 align-items-center">
                         <a href="tel:8082223333" class="phone">(808) 222-3333</a>
-                        <a href="#" class="btn btn-outline-success bi__btn">Get a quote</a>
+                        <a href="{{ route('contact') }}" class="btn btn-outline-success bi__btn">Get a quote</a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
 
-    <div class="bg__overlay">
-        <video src="{{ asset('assets/img/comingSoon/bg-overlay.mp4') }}" type="video/mp4" placeline muted autoplay />
-    </div>
+    

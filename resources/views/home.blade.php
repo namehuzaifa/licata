@@ -2,6 +2,9 @@
 @section('title', 'Home  | '.config('app.name'))
 
 @section('content')
+<!-- <div class="bg__overlay">
+        <video src="{{ asset('assets/img/comingSoon/bg-overlay.mp4') }}" type="video/mp4" placeline muted autoplay />
+    </div> -->
     <main class="bi__mainContent">
             <section class="bi__hero">
                 <div class="container">
@@ -76,6 +79,10 @@
                                             <span class="ps-4 hero__heading hero__headingAnimate">Insurance </span>
                                         </div>
                                     </h1>
+                                    <p>
+                                    We are passionate about supporting our clients in the transportation industry with the best insurance options available. 
+                                    We understand that every trucking company is unique, and we take pride in developing personalized coverage plans that fit the specific needs of our clients.
+                                    </p>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-12 text-end pb-4">
@@ -93,12 +100,11 @@
                                     01
                                 </h3>
                                 <h2 class="hero__headingAnimate">
-                                    Trucking
+                                COMMERCIAL AUTO LIABILITY
                                 </h2>
                                 <p class="d-none">
-                                    It is a long established fact that a reader will be distracted by the readable content
-                                    of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                                    more-or-less normal distribution of letters, as opposed to using.
+                                Our Liability coverage is designed to provide unparalleled protection in case of accidents or injuries that occur while driving your commercial vehicle. 
+                                You can rest easy knowing that you're covered for any damage or injuries caused by your truck to another vehicle or person.
                                 </p>
                                 <a href="{{ route('innerService') }}" class="server__link">
                                     Read More
@@ -114,12 +120,12 @@
                                     02
                                 </h3>
                                 <h2 class="hero__headingAnimate">
-                                    House
+                                    PHYSICAL DAMAGE
                                 </h2>
                                 <p class="d-none">
-                                    It is a long established fact that a reader will be distracted by the readable content
-                                    of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                                    more-or-less normal distribution of letters, as opposed to using.
+                                When it comes to your commercial vehicle, we understand that protection is essential. That's why we offer Physical Damage coverage, 
+                                which provides comprehensive and collision coverage for your truck - covering damage regardless of fault, such as damage resulting from 
+                                theft, vandalism, or natural disasters.
                                 </p>
                                 <a href="{{ route('innerService') }}" class="server__link">
                                     Read More
@@ -135,12 +141,11 @@
                                     03
                                 </h3>
                                 <h2 class="hero__headingAnimate">
-                                    Vehicle
+                                    CARGO LIABILITY
                                 </h2>
                                 <p class="d-none">
-                                    It is a long established fact that a reader will be distracted by the readable content
-                                    of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                                    more-or-less normal distribution of letters, as opposed to using.
+                                    Cargo coverage is also available to safeguard your transportation business by protecting the goods your commercial vehicle carries - 
+                                    shielding you against damage, theft, or loss of cargo while your truck is in transit.
                                 </p>
                                 <a href="{{ route('innerService') }}" class="server__link">
                                     Read More
@@ -179,12 +184,10 @@
                                     </div>
                                 </h1>
                                 <p>
-                                    It is a long established fact that a reader will be distracted by the readable content
-                                    of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                                    more-or-less normal distribution of letters, as opposed to using 'Content here, content
-                                    here', making it look like readable English.
+                                At Licata Insurance, we are an insurance company with a great passion for helping our clients protect what is important to them. 
+                                Our focus is always the customer, and we strive to understand their needs and provide personalized and effective solutions.
                                 </p>
-                                <a href="#" class="btn bi__btn">Read more</a>
+                                <a href="{{ route('aboutUs') }}" class="btn bi__btn">Read more</a>
                             </div>
                         </div>
                     </div>
@@ -206,7 +209,7 @@
                             <div class="col-md-6 col-sm-12">
                                 <div class="d-flex gap-4">
                                     <a href="tel:8082223333" class="btn bi__btn textures">(808) 222-3333</a>
-                                    <a href="#" class="btn bi__btn" style="background:black; color: #fff">Read more</a>
+                                    <a href="{{ route('aboutUs') }}" class="btn bi__btn" style="background:black; color: #fff">Read more</a>
                                 </div>
                             </div>
                         </div>
@@ -227,12 +230,11 @@
                                     </div>
                                 </h1>
                                 <p>
-                                    It is a long established fact that a reader will be distracted by the readable content
-                                    of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                                    more-or-less normal distribution of letters, as opposed to using 'Content here, content
-                                    here', making it look like readable English.
+                                Our team of experts is dedicated to providing you with exceptional service and support. You can have peace of mind knowing that 
+                                we will work with you to develop a personalized insurance plan that meets your specific needs. Contact us today to discuss our 
+                                Trucking coverage options and how we can help safeguard your business for years to come.
                                 </p>
-                                <a href="#" class="btn bi__btn">Get a quote</a>
+                                <a href="{{ route('contact') }}" class="btn bi__btn">Get a quote</a>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-12">
@@ -559,7 +561,7 @@
                                     here', making it look like readable English.
                                 </p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="#" class="btn bi__btn" style="background: #000; color:#fff">Get a quote</a>
+                                    <a href="{{ route('contact') }}" class="btn bi__btn" style="background: #000; color:#fff">Get a quote</a>
                                     <img src="{{asset('assets/img/apple.png')}}">
                                     <img src="{{asset('assets/img/google.png')}}">
                                 </div>
@@ -586,7 +588,7 @@
                                     </div>
                                 </h1>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <a href="#" class="btn bi__btn" style="background: #000; color:#fff">Get a quote</a>
+                                    <a href="{{ route('contact') }}" class="btn bi__btn" style="background: #000; color:#fff">Get a quote</a>
                                 </div>
                             </div>
                         </div>
@@ -733,3 +735,12 @@
     </main>
 @endsection
 
+@section('script')
+<script>
+    document.querySelector('.bg__overlay video').addEventListener('ended',myHandler,false);
+    function myHandler(e) {
+    $('.bg__overlay').fadeOut()
+}
+
+</script>
+@endsection

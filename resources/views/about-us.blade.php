@@ -22,7 +22,7 @@
             </div>
         </section>
 
-        <section class="bi__aboutUs my-5">
+        <section class="bi__aboutUs about">
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-md-6 col-sm-12">
@@ -50,16 +50,64 @@
                                 </div>
                             </h1>
                             <p>
-                                It is a long established fact that a reader will be distracted by the readable content
-                                of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                                more-or-less normal distribution of letters, as opposed to using 'Content here, content
-                                here', making it look like readable English.
+                            At Licata Insurance, we are an insurance company with a great passion for helping our clients protect what is important to them. 
+                            Our focus is always the customer, and we strive to understand their needs and provide personalized and effective solutions.
+                            </p>
+                            <p>
+                            With more than 10 years of experience in the insurance industry, our team has the knowledge and skills necessary to advise our 
+                            clients at all stages of their lives and businesses.
+                            </p>
+                            <p>
+                            Whether they need to insure a Trucking company, automobile, home insurance, life insurance, business insurance or any other type 
+                            of coverage, we are here to help them find the best option for them.
                             </p>
                             <!-- <a href="#" class="btn bi__btn">Read more</a> -->
                         </div>
                     </div>
                 </div>
             </div>
+            
+            <div class="container mt-5">
+                        <div class="col-12">
+                            <div class="content__box full text-center">
+                                <p>
+                                We pride ourselves on providing exceptional service to our customers, and we're always available to answer questions, resolve issues, 
+                                and even help you file a claim.Our goal is to provide peace of mind to our clients, knowing that they are protected in any situation.
+                                </p>
+                                <p>
+                                At Licata Insurance, we value the trust our clients place in us, and we always strive to exceed their expectations. If you're looking 
+                                for reliable and affordable insurance in the Miami area, don't hesitate to contact us.
+                                </p>
+                                <h1 style="width:100%">
+                                    <div class="d-flex justify-content-center">
+                                        <span class="hero__heading text-black">Today! We are </span>
+                                        <span class="ps-3 pe-3 hero__heading hero__headingAnimate">Ready </span>
+                                    </div>
+                                    <div class="d-flex margin__negativeTop justify-content-center">
+                                        <span class="hero__heading text-black">to help you</span>
+                                    </div>
+                                </h1>
+                                <p>
+                                At Licata Insurance, we are an insurance company with a passion for helping our clients protect what is important to them. Our focus is 
+                                always on the customer, and we strive to understand their needs and provide personalized and effective solutions.
+                                </p>
+                                <p>
+                                With over 10 years of experience in the insurance industry, our team has the knowledge and skills necessary to advise our clients at 
+                                all stages of their lives and businesses.Whether you need Trucking insurance, car insurance, home insurance, life insurance, business 
+                                insurance, or any other type of coverage, we are here to help them find the best option for them.
+                                </p>
+                                <p>
+                                We take pride in offering exceptional service to our clients, and we are always available to answer questions, solve problems, and even help 
+                                them file a claim. Our goal is to provide peace of mind to our clients, knowing that they are protected in any situation.
+                                </p>
+                                <p>
+                                At Licata Insurance, we value the trust our clients place in us, and we always strive to exceed their expectations. If you are looking for 
+                                reliable and affordable insurance in the big state of Texas, do not hesitate to contact us today.We are ready to help you.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
         </section>
 
 

@@ -45,70 +45,128 @@
                     </div>
                 </div>
                 <div class="row mt-5 service__list">
-                    <div class="col-md-4 col-sm-6 col-12">
-                        <div class="service__box">
-                            <div class="service__imgOverlay">
-                                <img src="./assets/img/service-img.png" class="img-fluid" />
+                        <div class="col-md-4 col-sm-6 col-12">
+                            <div class="service__box">
+                                <div class="service__imgOverlay">
+                                    <img src="{{asset('assets/img/service-img.png')}}" class="img-fluid" />
+                                </div>
+                                <h3>
+                                    01
+                                </h3>
+                                <h2 class="hero__headingAnimate">
+                                COMMERCIAL AUTO LIABILITY
+                                </h2>
+                                <p class="d-none">
+                                Our Liability coverage is designed to provide unparalleled protection in case of accidents or injuries that occur while driving your commercial vehicle. 
+                                You can rest easy knowing that you're covered for any damage or injuries caused by your truck to another vehicle or person.
+                                </p>
+                                <a href="{{ route('innerService') }}" class="server__link">
+                                    Read More
+                                </a>
                             </div>
-                            <h3>
-                                01
-                            </h3>
-                            <h2 class="hero__headingAnimate">
-                                Trucking
-                            </h2>
-                            <p class="d-none">
-                                It is a long established fact that a reader will be distracted by the readable content
-                                of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                                more-or-less normal distribution of letters, as opposed to using.
-                            </p>
-                            <a href="{{ route('innerService') }}" class="server__link">
-                                Read More
-                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-12">
+                            <div class="service__box bordered">
+                                <div class="service__imgOverlay">
+                                    <img src="{{asset('assets/img/service-img.png')}}" class="img-fluid" />
+                                </div>
+                                <h3>
+                                    02
+                                </h3>
+                                <h2 class="hero__headingAnimate">
+                                    PHYSICAL DAMAGE
+                                </h2>
+                                <p class="d-none">
+                                When it comes to your commercial vehicle, we understand that protection is essential. That's why we offer Physical Damage coverage, 
+                                which provides comprehensive and collision coverage for your truck - covering damage regardless of fault, such as damage resulting from 
+                                theft, vandalism, or natural disasters.
+                                </p>
+                                <a href="{{ route('innerService') }}" class="server__link">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="service__box">
+                                <div class="service__imgOverlay">
+                                    <img src="{{asset('assets/img/service-img.png')}}" class="img-fluid" />
+                                </div>
+                                <h3>
+                                    03
+                                </h3>
+                                <h2 class="hero__headingAnimate">
+                                    CARGO LIABILITY
+                                </h2>
+                                <p class="d-none">
+                                    Cargo coverage is also available to safeguard your transportation business by protecting the goods your commercial vehicle carries - 
+                                    shielding you against damage, theft, or loss of cargo while your truck is in transit.
+                                </p>
+                                <a href="{{ route('innerService') }}" class="server__link">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="service__box">
+                                <div class="service__imgOverlay">
+                                    <img src="{{asset('assets/img/service-img.png')}}" class="img-fluid" />
+                                </div>
+                                <h3>
+                                    04
+                                </h3>
+                                <h2 class="hero__headingAnimate">
+                                    COMMERCIAL GENERAL LIABILITY
+                                </h2>
+                                <p class="d-none">
+                                We also offer Commercial General Liability (GL) coverage, which provides protection against claims for injuries or property 
+                                damage that arise from your commercial operations. This coverage is especially important in the transportation industry
+                                </p>
+                                <a href="{{ route('innerService') }}" class="server__link">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="service__box bordered">
+                                <div class="service__imgOverlay">
+                                    <img src="{{asset('assets/img/service-img.png')}}" class="img-fluid" />
+                                </div>
+                                <h3>
+                                    05
+                                </h3>
+                                <h2 class="hero__headingAnimate">
+                                    WORKERS COMP
+                                </h2>
+                                <p class="d-none">
+                                We also know that taking care of your employees is critical to ensuring a successful trucking business. Our Workers' 
+                                Compensation coverage offers benefits to employees who are injured while working, including medical expenses and lost wages.
+                                </p>
+                                <a href="{{ route('innerService') }}" class="server__link">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="service__box">
+                                <div class="service__imgOverlay">
+                                    <img src="{{asset('assets/img/service-img.png')}}" class="img-fluid" />
+                                </div>
+                                <h3>
+                                    06
+                                </h3>
+                                <h2 class="hero__headingAnimate">
+                                    BOBTAIL
+                                </h2>
+                                <p class="d-none">
+                                Bobtail coverage provides the protection you need when your commercial vehicle is being operated without a trailer attached. 
+                                Whether you're returning to the warehouse or en route to a repair shop, we have you covered.
+                                </p>
+                                <a href="{{ route('innerService') }}" class="server__link">
+                                    Read More
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-12">
-                        <div class="service__box bordered">
-                            <div class="service__imgOverlay">
-                                <img src="./assets/img/service-img.png" class="img-fluid" />
-                            </div>
-                            <h3>
-                                02
-                            </h3>
-                            <h2 class="hero__headingAnimate">
-                                House
-                            </h2>
-                            <p class="d-none">
-                                It is a long established fact that a reader will be distracted by the readable content
-                                of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                                more-or-less normal distribution of letters, as opposed to using.
-                            </p>
-                            <a href="{{ route('innerService') }}" class="server__link">
-                                Read More
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                        <div class="service__box">
-                            <div class="service__imgOverlay">
-                                <img src="./assets/img/service-img.png" class="img-fluid" />
-                            </div>
-                            <h3>
-                                03
-                            </h3>
-                            <h2 class="hero__headingAnimate">
-                                Vehicle
-                            </h2>
-                            <p class="d-none">
-                                It is a long established fact that a reader will be distracted by the readable content
-                                of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                                more-or-less normal distribution of letters, as opposed to using.
-                            </p>
-                            <a href="{{ route('innerService') }}" class="server__link">
-                                Read More
-                            </a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
 
