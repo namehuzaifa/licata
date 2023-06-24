@@ -31,8 +31,8 @@
                                     <div class="row">
                                         <div class="col-md-6 col-12">
                                             <div class="mb-1">
-                                                <label class="form-label" for="first-title-vertical" >Title</label>
-                                                <input type="text" id="first-title-vertical" class="form-control" value="{{ ($isEdit) ? $testimonial?->title : old('title')  }}" name="title" placeholder="title" />
+                                                <label class="form-label" for="first-title-vertical" >Name</label>
+                                                <input type="text" id="first-title-vertical" class="form-control" value="{{ ($isEdit) ? $testimonial?->title : old('title')  }}" name="title" placeholder="Name" />
                                                 @error('title')<div class="invalid-feedback d-block">{{ $message }}</div>@enderror
                                             </div>
                                         </div>
