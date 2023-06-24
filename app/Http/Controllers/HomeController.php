@@ -2,34 +2,52 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
+use App\Models\Faq;
+use App\Models\Service;
+use App\Models\Testimonial;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     function home() {
-        return view('home');
+        $testimonials = Testimonial::active()->latest()->get();
+        $services = Service::active()->limit(3)->get();
+        $blogs = Blog::active()->latest()->get();
+        $faqs = Faq::active()->latest()->get();
+        return view('front.home', compact('testimonials', 'services', 'blogs', 'faqs'));
     }
 
     function aboutUs() {
-        return view('about-us');
+        return view('front.about-us');
     }
 
     function contact() {
-        return view('contact');
+        return view('front.contact');
     }
 
     function services() {
-        return view('services');
+        $services = Service::active()->get();
+        return view('front.services',compact('services'));
     }
 
-    function innerService() {
-        return view('inner-pages');
+    function serviceDetail($id) {
+        $service = Service::active()->findOrFail($id);
+        return view('front.inner-pages', compact('service'));
     }
 
     function blog() {
-        return view('blog');
+        $blogs = Blog::active()->limit(3)->get();
+        return view('front.blog' , compact('blogs'));
     }
+
+    function blogDetail($id) {
+        $blog = Blog::active()->findOrFail($id);
+        return view('front.inner-blog', compact('blog'));
+    }
+
     function faq() {
-        return view('faq');
+        $faqs = Faq::active()->latest()->get();
+        return view('front.faq',  compact('faqs'));
     }
 }
