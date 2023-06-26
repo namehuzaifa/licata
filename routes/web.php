@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\ContactQueryController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\ProfileController;
@@ -31,6 +32,7 @@ Route::group(['prefix' => 'admin'], function(){
     Route::resource('service', ServiceController::class)->middleware('auth');
     Route::resource('blog', BlogController::class)->middleware('auth');
     Route::resource('faq', FaqController::class)->middleware('auth');
+    Route::get('/contact-list', [ContactQueryController::class, 'index'])->name('contact-list')->middleware(['auth', 'verified']);
     Route::get('/newsletter-list', [NewsLetterController::class, 'index'])->name('newsletter-list')->middleware(['auth', 'verified']);
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin-dashboard')->middleware(['auth', 'verified']);
 });
@@ -58,6 +60,8 @@ Route::get('/newsletter', [NewsLetterController::class, 'store'])->name('newslet
 Route::get('/',         [HomeController::class, 'home'])->name('home');
 Route::get('/about-us', [HomeController::class, 'aboutUs'])->name('aboutUs');
 Route::get('/contact',  [HomeController::class, 'contact'])->name('contact');
+Route::post('/contact', [ContactQueryController::class, 'store'])->name('contact-store');
+
 Route::get('/services', [HomeController::class, 'services'])->name('services');
 Route::get('/service-detail/{id}',  [HomeController::class, 'serviceDetail'])->name('service-detail');
 Route::get('/blog',     [HomeController::class, 'blog'])->name('blog');

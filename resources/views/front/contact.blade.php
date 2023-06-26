@@ -35,32 +35,44 @@
                                             <div id="form-message-success" class="mb-4">
                                                 Your message was sent, thank you!
                                             </div>
-                                            <form method="POST" id="contactForm" name="contactForm"
-                                                novalidate="novalidate">
+                                            <form method="POST" action="{{ route('contact') }}" id="contactForm" name="contactForm" novalidate="novalidate">
+                                               @csrf
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <input type="text" class="form-control" name="name"
-                                                                id="name" placeholder="Name">
+                                                                id="name" placeholder="Name" required>
                                                         </div>
+                                                        @error('name') <p class="alert alert-danger p-1"><small>{{ $message }}</small></p> @enderror
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <input type="email" class="form-control" name="email"
-                                                                id="email" placeholder="Email">
+                                                                id="email" placeholder="Email" required>
                                                         </div>
+                                                        @error('email') <p class="alert alert-danger p-1"><small>{{ $message }}</small></p> @enderror
                                                     </div>
                                                     <div class="col-md-12">
                                                         <div class="form-group">
                                                             <input type="text" class="form-control" name="subject"
-                                                                id="subject" placeholder="Subject">
+                                                                id="subject" placeholder="Subject" required>
                                                         </div>
+                                                        @error('subject') <p class="alert alert-danger p-1"><small>{{ $message }}</small></p> @enderror
                                                     </div>
                                                     <div class="col-md-12">
                                                         <div class="form-group">
                                                             <textarea name="message" class="form-control" id="message"
                                                                 cols="30" rows="15" placeholder="Message"></textarea>
                                                         </div>
+                                                    </div>
+
+                                                    <div class="col-md-12">
+                                                        @if (session('status') == 'success')
+                                                            <p class="alert alert-success p-1"><small>{{ session('message') }}</small></p>
+                                                        @endif
+                                                        @if (session('status') == "failed")
+                                                            <p class="alert alert-danger p-1"><small>{{ session('message') }}</small></p>
+                                                        @endif
                                                     </div>
                                                     <div class="col-md-12">
                                                         <div class="form-group">
