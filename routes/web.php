@@ -63,7 +63,7 @@ Route::get('/service-detail/{id}',  [HomeController::class, 'serviceDetail'])->n
 Route::get('/blog',     [HomeController::class, 'blog'])->name('blog');
 Route::get('/blog-detail/{id}',     [HomeController::class, 'blogDetail'])->name('blog-detail');
 Route::get('/faq',     [HomeController::class, 'faq'])->name('faq');
-Route::get('/dashboard', [HomeController::class, 'index'])->middleware(['auth',])->name('dashboard');
+// Route::get('/dashboard', [HomeController::class, 'index'])->middleware(['auth',])->name('dashboard');
 
 
 
