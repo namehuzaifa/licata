@@ -37,6 +37,7 @@
                                             </div>
                                             <form method="POST" action="{{ route('contact') }}" id="contactForm" name="contactForm" novalidate="novalidate">
                                                @csrf
+                                               {!! RecaptchaV3::field('register') !!}
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form-group">
@@ -73,6 +74,9 @@
                                                         @if (session('status') == "failed")
                                                             <p class="alert alert-danger p-1"><small>{{ session('message') }}</small></p>
                                                         @endif
+                                                        @error('g-recaptcha-response')
+                                                            <p class="alert alert-danger p-1"><small>{{ $message }}</small></p>
+                                                        @enderror
                                                     </div>
                                                     <div class="col-md-12">
                                                         <div class="form-group">
@@ -132,10 +136,7 @@
                 </div>
             </div>
         </section>
-
-
-
-
     </main>
+    {!! RecaptchaV3::initJs() !!}
 @endsection
 

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coming Soon</title>
-    <link rel="icon" type="image/x-icon" href="{{ asset('assets/img/comingSoon/logo.png') }}" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('front-assets/img/comingSoon/logo.png') }}" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +35,7 @@
 
         .banner {
             /* background: center / cover no-repeat url("../img/logo1.png"),#707070 35%; */
-            background: url("{{ asset('assets/img/comingSoon/home1.jpg') }}");
+            background: url("{{ asset('front-assets/img/comingSoon/home1.jpg') }}");
             height: 100vh;
             padding-top: 3rem;
             /* position: relative; */
@@ -470,7 +470,7 @@
 </head>
 <body>
     <div class="bg__overlay">
-        <video src="{{ asset('assets/img/comingSoon/bg-overlay.mp4') }}" type="video/mp4" muted autoplay />
+        <video src="{{ asset('front-assets/img/comingSoon/bg-overlay.mp4') }}" type="video/mp4" muted autoplay />
     </div>
 
     <section class="banner">
@@ -480,7 +480,7 @@
                 <div class="col-sm-12">
                     <div class="banner_des">
                         <div>
-                            <img src="{{ asset('assets/img/comingSoon/logo.png') }}" alt="" class="img-fluid logo_img">
+                            <img src="{{ asset('front-assets/img/comingSoon/logo.png') }}" alt="" class="img-fluid logo_img">
                         </div>
                         <h1 class="main_head">WE ARE <br>
                             <span class="txt">Coming Soon</span>
@@ -490,6 +490,7 @@
                             <h1 class="frm_txt">Get Latest Updates</h1>
                             <form id="newsletter" method="post" class="needs-validation" novalidate>
                                 @csrf
+                                {!! RecaptchaV3::field('register') !!}
                                 <div class="input-group mb-3">
                                     <input type="email" name="email" class="form-control form_txt" placeholder="Your Email..." id="validationCustom03" required>
                                     <button class="btn btn-dark" type="submit" id="button-addon2">Submit Now</button>
@@ -513,7 +514,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.14/moment-timezone-with-data-2012-2022.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.all.min.js"></script>
-
+{!! RecaptchaV3::initJs() !!}
 <script>
 
     (() => {

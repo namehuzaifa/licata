@@ -189,7 +189,7 @@
 
                 <li class="nav-item {{ navActive(['contact-list']) }}">
                     <a class="d-flex align-items-center" href="{{ route('contact-list') }}">
-                        <i data-feather='mail'></i>
+                        <i data-feather='info'></i>
                         <span class="menu-title text-truncate" data-i18n="contact-list">Contact Query</span>
                     </a>
                 </li>

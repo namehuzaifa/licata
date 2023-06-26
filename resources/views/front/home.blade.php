@@ -25,6 +25,7 @@
 
                                     <form id="newsletter" method="get" class="hero__form">
                                         @csrf
+                                        {!! RecaptchaV3::field('register') !!}
                                         <div class="row">
                                             <div class="col">
                                                 <input type="email" class="form-control" placeholder="Your Email"
@@ -772,6 +773,7 @@
 @endsection
 
 @section('script')
+{!! RecaptchaV3::initJs() !!}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.all.min.js"></script>
 

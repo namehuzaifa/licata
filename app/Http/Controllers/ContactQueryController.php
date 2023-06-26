@@ -33,11 +33,12 @@ class ContactQueryController extends Controller
             'name' => 'required',
             'email' => 'required',
             'subject' => 'required',
+            'g-recaptcha-response' => 'required|recaptchav3:register,0.5'
         ]);
 
         try {
 
-            ContactQuery::create($request->except('_token',));
+            ContactQuery::create($request->except('_token','g-recaptcha-response'));
             return redirect()->back()->with(['status' => 'success', 'message' => "Query has been Submitted."]);
 
         } catch (\Exception $e) {

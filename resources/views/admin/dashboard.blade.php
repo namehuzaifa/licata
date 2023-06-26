@@ -102,19 +102,20 @@
                         </div>
                     </div>
                 </div>
-                {{-- <div class="col-lg-4 col-sm-6">
+                 <div class="col-lg-4 col-sm-6">
                     <div class="card">
                         <div class="card-body d-flex align-items-center justify-content-between">
                             <div>
-                                <h3 class="fw-bolder mb-75">{{ $Location }}</h3>
-                                <span>Total Location</span>
+                                <h3 class="fw-bolder mb-75">{{ $contact }}</h3>
+                                <span>Contact Query</span>
                             </div>
                             <div class="avatar bg-light-primary p-50">
-                                <span class="avatar-content"><i data-feather='map'></i></span>
+                                <span class="avatar-content"><i data-feather='info'></i></i></span>
                             </div>
                         </div>
                     </div>
                 </div>
+                {{--
                 <div class="col-lg-6 col-sm-6">
                     <div class="card">
                         <div class="card-body d-flex align-items-center justify-content-between">
