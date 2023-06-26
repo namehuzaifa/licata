@@ -1,6 +1,8 @@
 @extends('layouts.frontMaster')
+
 @section('title', 'Contact Us  | '.config('app.name'))
 @section('content')
+{!! RecaptchaV3::initJs() !!}
     <main class="bi__mainContent">
 
         <section class="bi__hero page__title">
@@ -37,7 +39,7 @@
                                             </div>
                                             <form method="POST" action="{{ route('contact') }}" id="contactForm" name="contactForm" novalidate="novalidate">
                                                @csrf
-                                               {!! RecaptchaV3::field('register') !!}
+                                               {!! RecaptchaV3::field("{{ route('contact') }}") !!}
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form-group">
@@ -137,6 +139,6 @@
             </div>
         </section>
     </main>
-    {!! RecaptchaV3::initJs() !!}
+
 @endsection
 
