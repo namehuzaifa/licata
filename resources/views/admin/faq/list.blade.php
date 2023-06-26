@@ -1,7 +1,4 @@
 @extends('layouts.master')
-@section('styles')
-    {{--  --}}
-@endsection
 @section('content')
 
     <div class="app-content content ">
@@ -29,7 +26,7 @@
                                 <div class="d-flex flex-row-reverse">
                                     <a class="btn btn-sm btn-primary" href="{{ route('faq.create') }}">Add Faq <i data-feather='plus'></i></a>
                                 </div>
-                                <table class="table table-bordered table-hover" id="datatable">
+                                <table class="table table-bordered table-hover datatables-basic" id="datatable">
                                     <thead>
                                         <tr>
                                             <th>Sno</th>
@@ -70,6 +67,4 @@
         </div>
     </div>
 @endsection
-@section('script')
-    {{-- --}}
-@endsection
+@include('components.admin.datatable-script')

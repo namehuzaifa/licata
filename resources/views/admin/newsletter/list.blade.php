@@ -65,7 +65,7 @@
                                 <table class="datatables-basic table">
                                     <thead>
                                         <tr>
-                                            <th></th>
+                                            {{-- <th></th> --}}
                                             <th>id</th>
                                             <th>Email</th>
                                             <th>Query Date</th>
@@ -75,7 +75,7 @@
                                         @foreach ($newsletters as $newsletter)
 
                                         <tr>
-                                            <td id="{{ $newsletter?->email }}"></td>
+                                            {{-- <td id="{{ $newsletter?->email }}"></td> --}}
                                             <td>{{ $newsletter->id }}</td>
                                             <td>
                                                 <div class="d-flex justify-content-left align-items-center">
@@ -183,41 +183,41 @@
             'excelHtml5',
             'csvHtml5',
             'pdfHtml5',
-                {
-                    text: 'Send Email',
-                    className: 'add-new send-email btn btn-primary',
-                    attr: {
-                        'data-bs-toggle': 'modal',
-                        'data-bs-target': '#editUser'
-                    },
-                    // init: function (api, node, config) {
-                    //     $(node).removeClass('btn-secondary');
-                    // }
-                }
+                // {
+                //     text: 'Send Email',
+                //     className: 'add-new send-email btn btn-primary',
+                //     attr: {
+                //         'data-bs-toggle': 'modal',
+                //         'data-bs-target': '#editUser'
+                //     },
+                //     // init: function (api, node, config) {
+                //     //     $(node).removeClass('btn-secondary');
+                //     // }
+                // }
             ],
 
-            columnDefs: [
+            // columnDefs: [
 
-                    {
-                    // For Checkboxes
-                    targets: 0,
-                    orderable: false,
-                    responsivePriority: 3,
-                    render: function (data, type, full, meta) {
-                        return (
-                        '<div class="form-check"> <input class="form-check-input dt-checkboxes" type="checkbox" value="" id="checkbox' +
-                        data +
-                        '" /><label class="form-check-label" for="checkbox' +
-                        data +
-                        '"></label></div>'
-                        );
-                    },
-                    checkboxes: {
-                        selectAllRender:
-                        '<div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="checkboxSelectAll" /><label class="form-check-label" for="checkboxSelectAll"></label></div>'
-                    }
-                    },
-                ]
+            //         {
+            //         // For Checkboxes
+            //         targets: 0,
+            //         orderable: false,
+            //         responsivePriority: 3,
+            //         render: function (data, type, full, meta) {
+            //             return (
+            //             '<div class="form-check"> <input class="form-check-input dt-checkboxes" type="checkbox" value="" id="checkbox' +
+            //             data +
+            //             '" /><label class="form-check-label" for="checkbox' +
+            //             data +
+            //             '"></label></div>'
+            //             );
+            //         },
+            //         checkboxes: {
+            //             selectAllRender:
+            //             '<div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="checkboxSelectAll" /><label class="form-check-label" for="checkboxSelectAll"></label></div>'
+            //         }
+            //         },
+            //     ]
         });
 
         // $(document).on("click",".send-email",function() {
@@ -229,35 +229,35 @@
         //     console.log(emailArr);
         // });
 
-        $(document).on('submit', '#postEmail', function (e) {
-            e.preventDefault();
+        // $(document).on('submit', '#postEmail', function (e) {
+        //     e.preventDefault();
 
-            var formdata = new FormData(this);
-            $('table').find('.dt-checkboxes:checked').each(function( index ){
-                formdata.append('emails[]',  $(this).parents('td').attr('id'));
-            });
+        //     var formdata = new FormData(this);
+        //     $('table').find('.dt-checkboxes:checked').each(function( index ){
+        //         formdata.append('emails[]',  $(this).parents('td').attr('id'));
+        //     });
 
 
-            $.ajaxSetup({headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')}});
-            $.ajax({
-                type: "POST",
-                xhrFields: {withCredentials: true},
-                url: "{{ route('post-email') }}",
-                data: formdata,
-                contentType: false,
-                processData: false,
-                success: function (data) {
-                    if(data.status){
-                        toastr.success("Email Send Successfully");
-                    } else{
-                        toastr.error(data.msg);
-                    }
-                },
-                error: function (error) {
-                    toastr.success(error);
-                }
-            });
-        })
+        //     $.ajaxSetup({headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')}});
+        //     $.ajax({
+        //         type: "POST",
+        //         xhrFields: {withCredentials: true},
+        //         url: "",
+        //         data: formdata,
+        //         contentType: false,
+        //         processData: false,
+        //         success: function (data) {
+        //             if(data.status){
+        //                 toastr.success("Email Send Successfully");
+        //             } else{
+        //                 toastr.error(data.msg);
+        //             }
+        //         },
+        //         error: function (error) {
+        //             toastr.success(error);
+        //         }
+        //     });
+        // })
 
     </script>
 @endsection

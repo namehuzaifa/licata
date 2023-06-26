@@ -173,10 +173,17 @@
         <div class="main-menu-content">
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
 
-                <li class="nav-item {{ navActive(['dashboard']) }}">
-                    <a class="d-flex align-items-center" href="{{ route('dashboard') }}">
+                <li class="nav-item {{ navActive(['admin-dashboard']) }}">
+                    <a class="d-flex align-items-center" href="{{ route('admin-dashboard') }}">
                         <i data-feather='home'></i>
                         <span class="menu-title text-truncate" data-i18n="Dashboards">Dashboard</span>
+                    </a>
+                </li>
+
+                <li class="nav-item {{ navActive(['newsletter-list']) }}">
+                    <a class="d-flex align-items-center" href="{{ route('newsletter-list') }}">
+                        <i data-feather='mail'></i>
+                        <span class="menu-title text-truncate" data-i18n="newsletter-list">Newsletter</span>
                     </a>
                 </li>
 
@@ -239,7 +246,7 @@
 
                 <li class=" nav-item">
                     <a class="d-flex align-items-center" href="#">
-                        <i data-feather='message-square'></i>
+                        <i data-feather='grid'></i>
                         <span class="menu-title text-truncate" data-i18n="Faq">Faq</span>
                     </a>
                     <ul class="menu-content">

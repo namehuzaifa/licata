@@ -41,7 +41,7 @@
                                 </div>
                                 <div class="content mt-5">
                                     <p>
-                                        {{ $service->description }}
+                                        {!! $service->description !!}
                                     </p>
                                     {{-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac sem a quam
                                         convallis

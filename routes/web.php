@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\HomeController;
@@ -30,6 +31,8 @@ Route::group(['prefix' => 'admin'], function(){
     Route::resource('service', ServiceController::class)->middleware('auth');
     Route::resource('blog', BlogController::class)->middleware('auth');
     Route::resource('faq', FaqController::class)->middleware('auth');
+    Route::get('/newsletter-list', [NewsLetterController::class, 'index'])->name('newsletter-list')->middleware(['auth', 'verified']);
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin-dashboard')->middleware(['auth', 'verified']);
 });
 
 Route::controller(UsersController::class)->group(function (){
@@ -62,9 +65,7 @@ Route::get('/blog-detail/{id}',     [HomeController::class, 'blogDetail'])->name
 Route::get('/faq',     [HomeController::class, 'faq'])->name('faq');
 Route::get('/dashboard', [HomeController::class, 'index'])->middleware(['auth',])->name('dashboard');
 
-Route::get('/dashboard', function () {
-    return view('admin.dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

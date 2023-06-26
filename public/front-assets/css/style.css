@@ -1,5 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap');
 
+html{
+    scroll-behavior: smooth !important;
+}
+
+
+
+#btn-back-to-top {
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    display: block ;
+    opacity: 0;
+    z-index: 9999 !important;
+    background-color: #680911 !important;
+    border-radius: 50% !important;
+}
+
+.navbar-brand video {
+    height: 150px;
+    width: 100%;
+}
 h1,h2{
     font-family: 'Bebas Neue', sans-serif !important;
 }

@@ -47,7 +47,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">{{ $blog->title }}</h5>
                                     <p class="card-text">
-                                        {{ $blog->description }}
+                                        {!! $blog->description !!}
                                     </p>
                                     <a href="{{ route('blog-detail', $blog?->id ) }}" class="btn bi__btn article">Read</a>
                                 </div>

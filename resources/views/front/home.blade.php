@@ -22,11 +22,13 @@
                                             <span class="ps-4 hero__heading">Insurance </span>
                                         </div>
                                     </h1>
-                                    <form class="hero__form">
+
+                                    <form id="newsletter" method="get" class="hero__form">
+                                        @csrf
                                         <div class="row">
                                             <div class="col">
                                                 <input type="email" class="form-control" placeholder="Your Email"
-                                                    aria-label="First name">
+                                                    aria-label="Your Email" name="email" required>
                                             </div>
                                             <div class="col">
                                                 <input type="submit" class="form-control bi__btn" aria-label="Last name"
@@ -37,7 +39,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-12">
-                                <div class="hero__image">
+                                <div class="hero__image animate__animated animate__fadeInRightBig animate__slow">
                                     <img src="{{asset('front-assets/img/hero-truck.png')}}" class="img-fluid" />
                                 </div>
                             </div>
@@ -664,18 +666,18 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
                             <div class="faq">
-                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion accordion-flush row" id="accordionFlushExample">
 
                                     @forelse ($faqs as $faq)
-                                        <div class="accordion-item">
+                                        <div class="accordion-item col-lg-6 col-sm-12">
                                             <h3 class="accordion-header">
                                                 <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
-                                                    aria-expanded="false" aria-controls="flush-collapseOne">
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapse{{ $faq->id }}"
+                                                    aria-expanded="false" aria-controls="flush-collapse{{ $faq->id }}">
                                                    {{ $faq?->question }}
                                                 </button>
                                             </h3>
-                                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                            <div id="flush-collapse{{ $faq->id }}" class="accordion-collapse collapse"
                                                 data-bs-parent="#accordionFlushExample">
                                                 <div class="accordion-body">{{ $faq?->answer }}</div>
                                             </div>
@@ -770,11 +772,57 @@
 @endsection
 
 @section('script')
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.all.min.js"></script>
+
+
 <script>
-    document.querySelector('.bg__overlay video').addEventListener('ended',myHandler,false);
-    function myHandler(e) {
-    $('.bg__overlay').fadeOut()
-}
+//     document.querySelector('.bg__overlay video').addEventListener('ended',myHandler,false);
+//     function myHandler(e) {
+//     $('.bg__overlay').fadeOut()
+// }
+
+$(document).on('submit', '#newsletter', function(e) {
+        e.preventDefault()
+        var $this = $(this);
+        var data = $this.serialize()
+        $this.find('input, button').prop('disabled', true);
+        $this.find('.input-group').css({"opacity": "0.5",});
+        $.ajax({
+            type: "get",
+            url: "{{ route('newsletter') }}",
+            data: data,
+            dataType: "json",
+            success: function (data) {
+                $this.find('input, button').prop('disabled', false);
+                $this.find('.input-group').css({"opacity": "1",});
+                console.log(data);
+                if(data.status){
+                    $this.trigger('reset')
+                    swal(
+                        'Success',
+                        data.error,
+                        'success'
+                    )
+                } else{
+                    swal(
+                        'Error!',
+                        data.error,
+                        'error'
+                    )
+                }
+            },
+            error: function (error) {
+                $this.find('input, button').prop('disabled', false);
+                $this.find('.input-group').css({"opacity": "1",});
+                swal(
+                    'Error!',
+                    error.error,
+                    'error'
+                )
+            }
+        });
+    });
 
 </script>
 @endsection

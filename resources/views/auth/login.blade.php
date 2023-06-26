@@ -67,7 +67,7 @@
                         <!-- Login-->
                         <div class="d-flex col-lg-4 align-items-center auth-bg px-2 p-lg-5">
                             <div class="col-12 col-sm-8 col-md-6 col-lg-12 px-xl-2 mx-auto">
-                                <h2 class="card-title fw-bold mb-1">Welcome to Neary Coaching! 👋</h2>
+                                <h2 class="card-title fw-bold mb-1">Welcome to licata! 👋</h2>
                                 <p class="card-text mb-2">Please sign-in to your account and start the adventure</p>
                                 <form class="auth-login-form mt-2"  action="{{ route('login') }}" method="POST">
                                     @csrf
@@ -94,9 +94,9 @@
                                     </div>
                                     <button class="btn btn-primary w-100" tabindex="4">Sign in</button>
                                 </form>
-                                <p class="text-center mt-2"><span>New on our platform?</span>
+                                {{-- <p class="text-center mt-2"><span>New on our platform?</span>
                                     <a href="{{ route('register') }}"><span>&nbsp;Create an account</span></a>
-                                </p>
+                                </p> --}}
                                 {{-- <div class="divider my-2">
                                     <div class="divider-text">or</div>
                                 </div>

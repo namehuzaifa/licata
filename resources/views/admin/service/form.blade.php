@@ -50,9 +50,12 @@
 
                                         <div class="col-md-6  col-12">
                                             <div class="mb-1">
-                                                <label class="form-label" for="description">Description</label>
+                                                <div id="full-container">
+                                                    <div class="editor" id="editor">@if ($isEdit) {!! $service?->description !!} @endif</div>
+                                                </div>
+                                                {{-- <label class="form-label" for="description">Description</label>
                                                 <textarea class="form-control" name="description" id="" rows="8">{{ ($isEdit) ? $service?->description : old('description')  }}</textarea>
-                                                @error('description')<div class="invalid-feedback d-block">{{ $message }}</div>@enderror
+                                                @error('description')<div class="invalid-feedback d-block">{{ $message }}</div>@enderror --}}
                                             </div>
                                         </div>
 
@@ -97,6 +100,4 @@
 </div>
 
 @endsection
-@section('script')
-    {{--  --}}
-@endsection
+@include('components.admin.textediter-script')
