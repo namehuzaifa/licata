@@ -2,7 +2,7 @@
 
 @section('title', 'Contact Us  | '.config('app.name'))
 @section('content')
-{!! RecaptchaV3::initJs() !!}
+
     <main class="bi__mainContent">
 
         <section class="bi__hero page__title">
