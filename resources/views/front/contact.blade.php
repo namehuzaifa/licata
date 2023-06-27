@@ -40,7 +40,7 @@
                                             <form method="POST" action="{{ route('contact-store') }}" id="contactForm" name="contactForm" novalidate="novalidate">
                                                @csrf
 
-                                               {!! RecaptchaV3::field(route('contact-store'), $name='g-recaptcha-response') !!}
+                                               {!! RecaptchaV3::field('contact-store', $name='g-recaptcha-response') !!}
                                                {{-- {!! RecaptchaV3::field('contact') !!} --}}
                                                 <div class="row">
                                                     <div class="col-md-6">
