@@ -149,7 +149,7 @@
         event.preventDefault();
 
         grecaptcha.ready(function() {
-            grecaptcha.execute("{{ env('RECAPTCHAV3_SITEKEY') }}", {action: 'contact-query'}).then(function(token) {
+            grecaptcha.execute("{{ env('RECAPTCHAV3_SITEKEY') }}", {action: 'https://licata-insurance.logocorps.dev/contact-query'}).then(function(token) {
                 alert(token);
                 $('#contactForm').prepend('<input type="hidden" name="token_recaptcha" value="' + token + '">');
                 $('#contactForm').unbind('submit').submit();
