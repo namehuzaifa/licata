@@ -60,7 +60,7 @@ Route::get('/newsletter', [NewsLetterController::class, 'store'])->name('newslet
 Route::get('/',         [HomeController::class, 'home'])->name('home');
 Route::get('/about-us', [HomeController::class, 'aboutUs'])->name('aboutUs');
 Route::get('/contact',  [HomeController::class, 'contact'])->name('contact');
-Route::post('/contact', [ContactQueryController::class, 'store'])->name('contact-store');
+Route::post('/contact-query', [ContactQueryController::class, 'store'])->name('contact-store');
 
 Route::get('/services', [HomeController::class, 'services'])->name('services');
 Route::get('/service-detail/{id}',  [HomeController::class, 'serviceDetail'])->name('service-detail');

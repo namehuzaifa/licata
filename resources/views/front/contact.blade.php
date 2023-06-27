@@ -37,7 +37,7 @@
                                             <div id="form-message-success" class="mb-4">
                                                 Your message was sent, thank you!
                                             </div>
-                                            <form method="POST" action="{{ route('contact') }}" id="contactForm" name="contactForm" novalidate="novalidate">
+                                            <form method="POST" action="{{ route('contact-store') }}" id="contactForm" name="contactForm" novalidate="novalidate">
                                                @csrf
 
                                                {{-- {!! RecaptchaV3::field(route('contact'), $name='g-recaptcha-response') !!} --}}
@@ -149,7 +149,7 @@
         event.preventDefault();
 
         grecaptcha.ready(function() {
-            grecaptcha.execute("{{ env('RECAPTCHAV3_SITEKEY') }}", {action: 'https://licata-insurance.logocorps.dev/contact'}).then(function(token) {
+            grecaptcha.execute("{{ env('RECAPTCHAV3_SITEKEY') }}", {action: 'contact-store'}).then(function(token) {
                 alert(token);
                 $('#contactForm').prepend('<input type="hidden" name="token_recaptcha" value="' + token + '">');
                 $('#contactForm').unbind('submit').submit();
