@@ -33,7 +33,7 @@ class ContactQueryController extends Controller
             'name' => 'required',
             'email' => 'required',
             'subject' => 'required',
-            'g-recaptcha-response' => 'required|recaptchav3:register,0.5'
+            'g-recaptcha-response' => 'bail|required|recaptchav3:register,0.5'
         ]);
 
         try {
