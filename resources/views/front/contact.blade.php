@@ -40,7 +40,7 @@
                                             <form method="POST" action="{{ route('contact') }}" id="contactForm" name="contactForm" novalidate="novalidate">
                                                @csrf
 
-                                               {!! RecaptchaV3::field(route('contact'), $name='g-recaptcha-response') !!}
+                                               {{-- {!! RecaptchaV3::field(route('contact'), $name='g-recaptcha-response') !!} --}}
                                                {{-- {!! RecaptchaV3::field('contact') !!} --}}
                                                 <div class="row">
                                                     <div class="col-md-6">
@@ -141,6 +141,20 @@
             </div>
         </section>
     </main>
-
 @endsection
 
+@section('script')
+<script type="text/javascript">
+    $('#contactForm').submit(function(event) {
+        event.preventDefault();
+
+        grecaptcha.ready(function() {
+            grecaptcha.execute("{{ env('RECAPTCHAV3_SITEKEY') }}", {action: 'contact'}).then(function(token) {
+                alert(token);
+                $('#contactForm').prepend('<input type="hidden" name="token_recaptcha" value="' + token + '">');
+                $('#contactForm').unbind('submit').submit();
+            });;
+        });
+    });
+</script>
+@endsection

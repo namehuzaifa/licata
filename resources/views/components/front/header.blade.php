@@ -37,6 +37,9 @@
                 </div>
             </div>
         </nav>
+        <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </button>
     </header>
 
 
