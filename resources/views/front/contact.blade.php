@@ -37,10 +37,10 @@
                                             <div id="form-message-success" class="mb-4">
                                                 Your message was sent, thank you!
                                             </div>
-                                            <form method="POST" action="{{ route('contact-query') }}" id="contactForm" name="contactForm" novalidate="novalidate">
+                                            <form method="POST" action="{{ route('contact-store') }}" id="contactForm" name="contactForm" novalidate="novalidate">
                                                @csrf
 
-                                               {!! RecaptchaV3::field(route('contact-query'), $name='g-recaptcha-response') !!}
+                                               {!! RecaptchaV3::field(route('contact-store'), $name='g-recaptcha-response') !!}
                                                {{-- {!! RecaptchaV3::field('contact') !!} --}}
                                                 <div class="row">
                                                     <div class="col-md-6">
