@@ -343,11 +343,15 @@
                             <div class="testimonial__item">
                                 <div class="d-flex align-items-center">
                                     <div class="featured__name">
-                                        AC
+                                        @if ($testimonial->image)
+                                            <img src="{{ $testimonial->image }}" alt="">
+                                        @else
+                                            {{ strtoupper( titleShotName($testimonial->title) ) }}
+                                        @endif
                                     </div>
                                     <h5>
                                         {{ $testimonial->title }}
-                                        <span class="destination">Louisville, KY</span>
+                                        {{-- <span class="destination">Louisville, KY</span> --}}
                                     </h5>
                                 </div>
                                 <p class="testimonial__content">

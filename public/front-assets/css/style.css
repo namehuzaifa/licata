@@ -5,6 +5,12 @@ html{
 }
 
 
+.featured__name img {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    border-radius: 50%;
+}
 
 #btn-back-to-top {
     position: fixed !important;

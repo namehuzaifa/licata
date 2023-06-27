@@ -20,6 +20,16 @@ function slugGenerator($value, $model ,$column_name)
     return $slug;
 }
 
+function titleShotName($title="No Title", $wordCount=1)  {
+    $title = explode(' ', $title);
+    $shot = '';
+    foreach ($title as $key => $value) {
+       $shot .= mb_substr($value, 0, 1);
+       if ($key == $wordCount) break;
+    }
+    return $shot;
+}
+
 //  function getPages()
 // {
 //     return PagesContent::where('status',1);

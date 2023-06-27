@@ -47,7 +47,7 @@ class TestimonialController extends Controller
         try {
             // $slug                   = slugGenerator($request->title, Blog::class, 'slug');
             // $request['slug']        = $slug;
-            $request['image']   = 'assets/images/no-preview.png';
+            // $request['image']   = 'assets/images/no-preview.png';
 
             if (!empty($request->file('b_image'))) {
                 $path = $request->file('b_image')->store('public/testimonial');
