@@ -39,7 +39,9 @@
                                             </div>
                                             <form method="POST" action="{{ route('contact') }}" id="contactForm" name="contactForm" novalidate="novalidate">
                                                @csrf
-                                               {!! RecaptchaV3::field("{{ route('contact') }}") !!}
+
+                                               {!! RecaptchaV3::field(route('contact'), $name='g-recaptcha-response') !!}
+                                               {{-- {!! RecaptchaV3::field('contact') !!} --}}
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form-group">
