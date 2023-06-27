@@ -28,7 +28,7 @@ class ContactQueryController extends Controller
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
-    {
+    {dd($request->all());
         $request->validate([
             'name' => 'required',
             'email' => 'required',
