@@ -21,7 +21,7 @@
                             <a class="nav-link {{ navActive(['aboutUs']) }}" href="{{ route('aboutUs') }}">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {{ navActive(['services']) }}" href="{{ route('services') }}">Services</a>
+                            <a class="nav-link {{ navActive(['services']) }}" href="{{ route('services') }}">Products</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {{ navActive(['blog']) }}" href="{{ route('blog') }}">Blog</a>
@@ -31,7 +31,7 @@
                         </li>
                     </ul>
                     <div class="d-flex gap-5 align-items-center">
-                        <a href="tel:8082223333" class="phone">(808) 222-3333</a>
+                        <a href="tel:2107426167" class="phone">210-742-6167</a>
                         <a href="{{ route('contact') }}" class="btn btn-outline-success bi__btn">Get a quote</a>
                     </div>
                 </div>

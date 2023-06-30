@@ -6,7 +6,7 @@
         <video src="{{ asset('assets/img/comingSoon/bg-overlay.mp4') }}" type="video/mp4" playsinline muted="muted" autoplay controlslist="nodownload" />
     </div> -->
     <main class="bi__mainContent">
-            <section class="bi__hero">
+            <section class="bi__hero home">
                 <div class="container">
                     <div class="d-flex">
                         <div class="row align-items-center">
@@ -71,7 +71,7 @@
                             <div class="col-md-6 col-sm-12">
                                 <div class="content__box">
                                     <h5 class="theme__color">
-                                        TYPES OF DAMAGE
+                                        TYPES OF COVERAGES
                                     </h5>
                                     <h1>
                                         <div class="d-flex">
@@ -89,7 +89,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-12 text-end pb-4">
-                                <a href="{{ route('services') }}" class="btn bi__btn">View All Services</a>
+                                <a href="{{ route('services') }}" class="btn bi__btn">View All Products</a>
                             </div>
                         </div>
                     </div>
@@ -235,7 +235,7 @@
                             </div>
                             <div class="col-md-6 col-sm-12">
                                 <div class="d-flex gap-4">
-                                    <a href="tel:8082223333" class="btn bi__btn textures">(808) 222-3333</a>
+                                    <a href="tel:2107426167" class="btn bi__btn textures">210-742-6167</a>
                                     <a href="{{ route('aboutUs') }}" class="btn bi__btn" style="background:black; color: #fff">Read more</a>
                                 </div>
                             </div>

@@ -101,8 +101,7 @@
                                                     <span class="fa fa-map-marker"></span>
                                                 </div>
                                                 <div class="text pl-3">
-                                                    <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY
-                                                        10016</p>
+                                                    <p><span>Address:</span> 5900 Balconies Dr Ste 13213 Austin, Texas 78731</p>
                                                 </div>
                                             </div>
                                             <div class="dbox w-100 d-flex align-items-center">
@@ -120,7 +119,7 @@
                                                 </div>
                                                 <div class="text pl-3">
                                                     <p><span>Email:</span> <a
-                                                            href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+                                                            href="mailto:management@licata-insurance.com">Management@licata-insurance.com</a></p>
                                                 </div>
                                             </div>
                                             <div class="dbox w-100 d-flex align-items-center">

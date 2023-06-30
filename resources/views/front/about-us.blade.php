@@ -4,7 +4,7 @@
 @section('content')
     <main class="bi__mainContent">
 
-        <section class="bi__hero page__title">
+        <section class="bi__hero page__title about">
             <div class="container">
                 <div class="d-flex">
                     <div class="row align-items-center justify-content-center text-center">

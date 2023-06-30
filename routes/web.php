@@ -62,8 +62,8 @@ Route::get('/about-us', [HomeController::class, 'aboutUs'])->name('aboutUs');
 Route::get('/contact',  [HomeController::class, 'contact'])->name('contact');
 Route::post('/contact-query', [ContactQueryController::class, 'store'])->name('contact-store');
 
-Route::get('/services', [HomeController::class, 'services'])->name('services');
-Route::get('/service-detail/{id}',  [HomeController::class, 'serviceDetail'])->name('service-detail');
+Route::get('/products', [HomeController::class, 'services'])->name('services');
+Route::get('/product-detail/{id}',  [HomeController::class, 'serviceDetail'])->name('service-detail');
 Route::get('/blog',     [HomeController::class, 'blog'])->name('blog');
 Route::get('/blog-detail/{id}',     [HomeController::class, 'blogDetail'])->name('blog-detail');
 Route::get('/faq',     [HomeController::class, 'faq'])->name('faq');

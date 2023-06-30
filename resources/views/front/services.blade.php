@@ -29,17 +29,21 @@
                         <div class="col-md-12 col-sm-12 justify-content-center text-center">
                             <div class="content__box">
                                 <h5 class="theme__color">
-                                    TYPES OF DAMAGE
+                                    TYPES OF COVERAGES
                                 </h5>
                                 <h1>
                                     <div class="d-flex justify-content-center">
                                         <span class="hero__heading text-black">WE CAN HELP WITH ALL</span>
                                     </div>
-                                    <div class="d-flex margin__negativeTop justify-content-center">
+                                    <div class="d-flex justify-content-center margin__negativeTop">
                                         <span class="hero__heading text-black">OF YOUR </span>
                                         <span class="ps-4 hero__heading hero__headingAnimate">Insurance </span>
                                     </div>
                                 </h1>
+                                <p>
+                                We are passionate about supporting our clients in the transportation industry with the best insurance options available.
+                                We understand that every trucking company is unique, and we take pride in developing personalized coverage plans that fit the specific needs of our clients.
+                                </p>
                             </div>
                         </div>
                     </div>

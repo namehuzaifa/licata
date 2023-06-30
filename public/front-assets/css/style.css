@@ -108,6 +108,15 @@ a{
     padding-bottom: 80px;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
 }
+
+.bi__hero.home{
+    background: url('../img/home.jpg') no-repeat center;
+}
+
+.bi__hero.about{
+    background: url('../img/about.jpg') no-repeat center;
+}
+
 .hero__content h1 {
     font-size: 90px;
     color: #fff;

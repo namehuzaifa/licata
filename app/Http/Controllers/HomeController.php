@@ -14,7 +14,7 @@ class HomeController extends Controller
         $testimonials = Testimonial::active()->latest()->get();
         $services = Service::active()->limit(3)->get();
         $blogs = Blog::active()->latest()->get();
-        $faqs = Faq::active()->latest()->get();
+        $faqs = Faq::active()->get();
         return view('front.home', compact('testimonials', 'services', 'blogs', 'faqs'));
     }
 

@@ -15,7 +15,7 @@ class FaqController extends Controller
      */
     public function index()
     {
-        $faqs = Faq::latest()->get();
+        $faqs = Faq::active()->get();
         return view('admin.faq.list', compact('faqs'));
     }
 
