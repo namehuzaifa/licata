@@ -20,8 +20,23 @@
                         <li class="nav-item">
                             <a class="nav-link {{ navActive(['aboutUs']) }}" href="{{ route('aboutUs') }}">About Us</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link {{ navActive(['services']) }}" href="{{ route('services') }}">Products</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle {{ navActive(['services']) }}" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="true" href="{{ route('services') }}">Products</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                @forelse (getServices() as $service)
+
+                                    <li><a class="dropdown-item" href="{{ route('service-detail', $service->id) }}">{{ $service->title }}</a></li>
+
+                                @empty
+                                    <li><a class="dropdown-item" href="#">No Service Available</a></li>
+                                @endforelse
+                                
+                                <!-- <li><a class="dropdown-item" href="#">Physical Damage</a></li>
+                                <li><a class="dropdown-item" href="#">Cargo Liability</a></li>
+                                <li><a class="dropdown-item" href="#">Commercial General Liability</a></li>
+                                <li><a class="dropdown-item" href="#">Workers Comp</a></li>
+                                <li><a class="dropdown-item" href="#">Bobtail</a></li> -->
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {{ navActive(['blog']) }}" href="{{ route('blog') }}">Blog</a>
