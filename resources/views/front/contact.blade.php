@@ -109,7 +109,7 @@
                                                     <span class="fa fa-phone"></span>
                                                 </div>
                                                 <div class="text pl-3">
-                                                    <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a>
+                                                    <p><span>Phone:</span> <a href="tel:2107426167">210-742-6167</a>
                                                     </p>
                                                 </div>
                                             </div>
@@ -122,14 +122,14 @@
                                                             href="mailto:management@licata-insurance.com">Management@licata-insurance.com</a></p>
                                                 </div>
                                             </div>
-                                            <div class="dbox w-100 d-flex align-items-center">
-                                                <div class="icon d-flex align-items-center justify-content-center">
-                                                    <span class="fa fa-globe"></span>
-                                                </div>
-                                                <div class="text pl-3">
-                                                    <p><span>Website</span> <a href="#">yoursite.com</a></p>
-                                                </div>
-                                            </div>
+                                            <!--<div class="dbox w-100 d-flex align-items-center">-->
+                                            <!--    <div class="icon d-flex align-items-center justify-content-center">-->
+                                            <!--        <span class="fa fa-globe"></span>-->
+                                            <!--    </div>-->
+                                            <!--    <div class="text pl-3">-->
+                                            <!--        <p><span>Website</span> <a href="#">yoursite.com</a></p>-->
+                                            <!--    </div>-->
+                                            <!--</div>-->
                                         </div>
                                     </div>
                                 </div>
