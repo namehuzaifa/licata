@@ -30,11 +30,6 @@
                                 @empty
                                     <li><a class="dropdown-item" href="#">No Service Available</a></li>
                                 @endforelse
-<<<<<<< HEAD
-
-=======
-                                
->>>>>>> b6c64d88f7a1206f387551a667ed052f8e0b279e
                                 <!-- <li><a class="dropdown-item" href="#">Physical Damage</a></li>
                                 <li><a class="dropdown-item" href="#">Cargo Liability</a></li>
                                 <li><a class="dropdown-item" href="#">Commercial General Liability</a></li>

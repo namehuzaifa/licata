@@ -102,11 +102,6 @@ a{
 }
 .dropdown:hover .dropdown-menu li{
     padding:8px 0;
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> b6c64d88f7a1206f387551a667ed052f8e0b279e
 }
 .dropdown:hover .dropdown-menu li a{
     color:#000;
@@ -596,14 +591,11 @@ h3.accordion-header {
     padding-bottom: 180px;
     z-index: 3;
     position: relative;
-<<<<<<< HEAD
     background-size: cover;
     background-position: 50% 75%;
 }
 .bi__hero.about:before {
     content: unset !important;
-=======
->>>>>>> b6c64d88f7a1206f387551a667ed052f8e0b279e
 }
 .bi__hero.page__title:before {
     content: "";
