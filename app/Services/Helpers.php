@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Http;
+use App\Models\Service;
 use Illuminate\Support\Str;
 
 function navActive($route_name)
@@ -28,6 +29,10 @@ function titleShotName($title="No Title", $wordCount=1)  {
        if ($key == $wordCount) break;
     }
     return $shot;
+}
+
+function getServices()  {
+    return Service::active()->get();
 }
 
 //  function getPages()

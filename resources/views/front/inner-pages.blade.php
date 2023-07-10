@@ -4,12 +4,13 @@
 @section('content')
     <main class="bi__mainContent">
 
-        <section class="bi__hero page__title">
+        <section class="bi__hero page__title" style="background-image: url({{ asset('').$service?->image }})">
             <div class="container">
                 <div class="d-flex">
                     <div class="row align-items-center justify-content-center text-center">
                         <div class="col-12">
-                            <h1 class="hero__headingAnimate">{{ $service->title }}</h1>
+                            <!-- <h1 class="hero__headingAnimate">{{ $service->title }}</h1> -->
+                            <h1 class="hero__headingAnimate">Service Detail</h1>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb justify-content-center">
                                     <li class="breadcrumb-item "><a href="{{ route('home') }}">Service</a></li>
@@ -22,7 +23,7 @@
             </div>
         </section>
 
-        <section class="bi__contact my-5">
+        <section class="bi__contact my-5 inner_detail">
             <div class="container-fluid">
                 <div class="container">
                     <div class="row justify-content-center">
@@ -32,48 +33,17 @@
 
                                     <h1 class="text-center">
                                         <div class="d-flex justify-content-center">
-                                            <span class="hero__heading text-black">Detail </span>
-                                            <span class="ps-3 pe-3 hero__heading hero__headingAnimate2">Title </span>
+                                            <!-- <span class="hero__heading text-black">Detail </span> -->
+                                            <span class="ps-3 pe-3 hero__heading hero__headingAnimate2">{{ $service->title }} </span>
                                         </div>
                                 </div>
-                                <div>
-                                    <img src="{{ asset('/').$service?->image }}" />
-                                </div>
+                                <!-- <div>
+                                    <img src="{{ asset('').$service?->image }}" />
+                                </div> -->
                                 <div class="content mt-5">
                                     <p>
                                         {!! $service->description !!}
                                     </p>
-                                    {{-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac sem a quam
-                                        convallis
-                                        bibendum. Donec pulvinar enim id massa vulputate suscipit. Donec id odio mauris.
-                                        Orci varius natoque penatibus et magnis dis parturient montes, nascetur
-                                        ridiculus
-                                        mus. Proin vitae felis vel nunc tristique feugiat. Suspendisse a nisl ut orci
-                                        malesuada faucibus in eu nisl. Quisque in dui malesuada, imperdiet sapien sed,
-                                        fermentum sapien. Integer facilisis placerat vestibulum. Mauris interdum varius
-                                        maximus.</p>
-
-                                    <p>Ut ornare augue ac sem molestie, in lacinia libero laoreet. Morbi ac tortor at
-                                        justo
-                                        pulvinar porttitor. Nullam luctus velit urna, eget porttitor urna vestibulum
-                                        vel.
-                                        Nullam at molestie nisi, nec dignissim turpis. In pretium rutrum ex, ut
-                                        dignissim
-                                        nisl fringilla in. Duis sed porttitor quam, in ornare tellus. Integer rutrum
-                                        facilisis nibh. Nullam facilisis nec nunc malesuada volutpat. Aenean venenatis
-                                        lectus erat, vitae viverra lorem elementum ac. Pellentesque vel nibh arcu.
-                                        Quisque a
-                                        elementum nulla. Nullam placerat sodales neque sit amet maximus. Donec tempus
-                                        tincidunt elit non egestas. Aliquam varius sed eros quis imperdiet. Quisque
-                                        efficitur ultricies magna.</p>
-
-                                    <p>Sed nibh justo, blandit consectetur malesuada at, luctus quis metus. Fusce at
-                                        nibh
-                                        scelerisque, luctus metus ut, consectetur tortor. Aliquam erat volutpat.
-                                        Suspendisse
-                                        vel blandit eros. Curabitur posuere aliquet consequat. Aenean felis libero,
-                                        hendrerit at tincidunt sed, consequat vitae lorem. Aliquam sit amet euismod
-                                        diam.</p> --}}
                                 </div>
                             </div>
                         </div>
@@ -129,7 +99,7 @@
             </div>
         </section>
 
-        <section class="bi__faq">
+        <!-- <section class="bi__faq">
             <div class="container">
                 <div class="content__box text-center">
 
@@ -242,7 +212,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
 
     </main>

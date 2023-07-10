@@ -15,10 +15,18 @@
                     <div class="col-6 col-md-2 mb-3">
                         <h5>PRODUCTS</h5>
                         <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a href="{{ route('aboutUs') }}" class="nav-link p-0 ">Wyshes</a></li>
+                        @forelse (getServices() as $service)
+
+                            <!-- <li><a class="dropdown-item" href="{{ route('service-detail', $service->id) }}">{{ $service->title }}</a></li> -->
+                            <li class="nav-item mb-2"><a href="{{ route('service-detail', $service->id) }}" class="nav-link p-0 ">{{ $service->title }}</a></li>
+
+                        @empty
+                            <li><a class="dropdown-item" href="#">No Service Available</a></li>
+                        @endforelse
+                            <!-- <li class="nav-item mb-2"><a href="{{ route('aboutUs') }}" class="nav-link p-0 ">Wyshes</a></li>
                             <li class="nav-item mb-2"><a href="{{ route('aboutUs') }}" class="nav-link p-0 ">Flexible coverage</a></li>
                             <li class="nav-item mb-2"><a href="{{ route('aboutUs') }}" class="nav-link p-0 ">Wysh granters</a></li>
-                            <li class="nav-item mb-2"><a href="{{ route('aboutUs') }}" class="nav-link p-0 ">Instant coverage</a></li>
+                            <li class="nav-item mb-2"><a href="{{ route('aboutUs') }}" class="nav-link p-0 ">Instant coverage</a></li> -->
                         </ul>
                     </div>
 
