@@ -1,6 +1,11 @@
 @extends('layouts.frontMaster')
 @section('title', 'Home  | '.config('app.name'))
 
+<style>
+    .service__box p.d-none ~ p {
+        display: none;
+    }
+</style>
 @section('content')
 <!-- <div class="bg__overlay">
         <video src="{{ asset('assets/img/comingSoon/bg-overlay.mp4') }}" type="video/mp4" playsinline muted="muted" autoplay controlslist="nodownload" />
@@ -108,9 +113,7 @@
                                         {{ $service->title }}
                                     </h2>
                                     <p class="d-none">
-                                        <span>
                                             {!! $service->description !!}
-                                        </span>
                                     </p>
                                     <a href="{{ route('service-detail', $service->id) }}" class="server__link">
                                         Read More
