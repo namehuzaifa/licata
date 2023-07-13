@@ -193,8 +193,10 @@
                     <div class="row align-items-center">
                         <div class="col-md-6 col-sm-12">
                             <div class="about__image">
-                                <img src="{{asset('front-assets/img/about-img.png')}}" class="img-fluid" />
-                                <img src="{{asset('front-assets/img/about-img-2.png')}}" class="img-fluid float__img" />
+
+                                <img src="{{asset('front-assets/img/about-img1.png')}}" class="img-fluid" />
+                                {{-- <img src="{{asset('front-assets/img/about-img.png')}}" class="img-fluid" /> --}}
+                                {{-- <img src="{{asset('front-assets/img/about-img-2.png')}}" class="img-fluid float__img" /> --}}
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-12">
