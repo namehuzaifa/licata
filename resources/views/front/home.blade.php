@@ -108,7 +108,7 @@
                                         {{ $service->title }}
                                     </h2>
                                     <p class="d-none">
-                                        {{ $service->description }}
+                                        {!! $service->description !!}
                                     </p>
                                     <a href="{{ route('service-detail', $service->id) }}" class="server__link">
                                         Read More
