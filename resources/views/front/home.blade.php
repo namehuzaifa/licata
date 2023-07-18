@@ -626,7 +626,7 @@
                                     </div>
 
                                     <div class="d-flex">
-                                        <span class="pe-3 hero__heading hero__headingAnimate"> 4 </span>
+                                        <span class="pe-3 hero__heading hero__headingAnimate"> 3 </span>
                                         <span class="hero__heading text-white">Simple Steps</span>
                                     </div>
                                 </h1>
@@ -640,20 +640,20 @@
                                 <ul>
                                     <li class="d-flex">
                                         <span class="hero__headingAnimate">1</span>
-                                        <p>Create a personalized plan</p>
+                                        <p>Choose your coverages</p>
                                     </li>
                                     <li class="d-flex">
                                         <span class="hero__headingAnimate">2</span>
-                                        <p>Get your estimate in just a few clicks</p>
+                                        <p>Answer some background questions.</p>
                                     </li>
                                     <li class="d-flex">
                                         <span class="hero__headingAnimate">3</span>
-                                        <p>Answer some background question number four</p>
+                                        <p>Get your quote</p>
                                     </li>
-                                    <li class="d-flex">
+                                    {{-- <li class="d-flex">
                                         <span class="hero__headingAnimate">4</span>
                                         <p>Get coverage in less than 10 mins</p>
-                                    </li>
+                                    </li> --}}
                                 </ul>
                             </div>
                         </div>
