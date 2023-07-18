@@ -756,3 +756,80 @@ h3.accordion-header {
         padding-right:10px !important
     }
 
+     /* translate  CSS START*/
+
+    .skiptranslate iframe {
+        display: none;
+    }
+    :has(.skiptranslate) body{
+        top:0 !important;
+    }
+
+    .goog-te-gadget span {
+        display: none;
+    }
+
+    .goog-te-gadget {
+        font-size: 0 !important;
+    }
+
+    .goog-te-combo {
+        height: 60px;
+        padding: 0 20px;
+        font-family: 'Poppins', sans-serif !important;
+        background: linear-gradient(180deg, rgba(185,125,29,1) 0%, rgba(255,247,193,1) 100%);
+        outline: none;
+    }
+    .goog-te-combo option{
+        background: rgba(185,125,29,1);
+        color:#fff !important;
+    }
+
+    div#navbarSupportedContent {
+        gap: 1rem !important;
+    }
+
+    /* translate  CSS END*/
+
+    /* SPANISH CSS START*/
+    :is(html[lang='es']) .bi__btn {
+        font-size:12px;
+    }
+    :is(html[lang='es']) .hero__content h1{
+        font-size: 72px !important;
+    }
+    :is(html[lang='es']) .hero__form .bi__btn{
+        font-size:18px;
+    }
+
+    :is(html[lang='es']) .hero__affiliation {
+        padding-top:125px;
+    }
+
+    :is(html[lang='es']) button#btn-back-to-top {
+        padding: 10px 12px;
+    }
+    :is(html[lang='es']) .content__box h1{
+        font-size:70px;
+    }
+    :is(html[lang='es'])  .service__box .hero__headingAnimate{
+        font-size: 40px;
+        line-height: 80px;
+    }
+    :is(html[lang='es']) .service__box:hover p{
+        font-size:16px;
+    }
+    :is(html[lang='es']) .bi__aboutUs .content__box h1 {
+        font-size: 60px !important;
+    }
+    :is(html[lang='es']) .bi__aboutUs .bi__btn {
+        font-size:17px !important;
+    }
+    :is(html[lang='es']) .cta__text h2{
+        font-size:36px !important;
+    }
+
+    :is(html[lang='es']) .bi__cta .d-flex.gap-4 {
+        justify-content: end;
+    }
+    /* SPANISH CSS END*/
