@@ -48,6 +48,7 @@
                         <a href="tel:2107426167" class="phone">210-742-6167</a>
                         <a href="{{ route('contact') }}" class="btn btn-outline-success bi__btn">Get a quote</a>
                     </div>
+                    <div id="google_translate_element"></div>
                 </div>
             </div>
         </nav>

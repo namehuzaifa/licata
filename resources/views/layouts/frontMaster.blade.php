@@ -25,6 +25,30 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="{{asset('front-assets/js/main.js')}}"></script>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'es,en',  // Set the target language to Spanish
+                // layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            }, 'google_translate_element');
+        }
+
+        // function googleTranslateElementInit() {
+        //     new google.translate.TranslateElement(
+        //     {
+        //     pageLanguage: 'en',  // Set the language of your website
+        //     includedLanguages: 'es',  // Set the target language to Spanish
+        //     layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        //     },
+        //     'google_translate_element'
+        // );
+        // }
+
+    </script>
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     @yield('script')
 
 </body>
