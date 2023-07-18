@@ -779,6 +779,7 @@ h3.accordion-header {
         font-family: 'Poppins', sans-serif !important;
         background: linear-gradient(180deg, rgba(185,125,29,1) 0%, rgba(255,247,193,1) 100%);
         outline: none;
+        border-radius: 6px;
     }
     .goog-te-combo option{
         background: rgba(185,125,29,1);
