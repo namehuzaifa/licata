@@ -82,7 +82,7 @@
             </div>
         </section>
 
-        <section class="bi__fourSteps">
+        {{-- <section class="bi__fourSteps">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-sm-12">
@@ -127,9 +127,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
 
-        <section class="bi__faq">
+        {{-- <section class="bi__faq">
             <div class="container">
                 <div class="content__box text-center">
 
@@ -242,7 +242,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
 
 
     </main>
